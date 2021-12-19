@@ -2,14 +2,9 @@
 id: vn2rdYADJbL87dT0B1gcp
 title: Npm
 desc: ''
-updated: 1639846042813
+updated: 1639887937087
 created: 1639838780065
 ---
-
-# How to test a developing module
-
-Can use softlink to this. Both yarn and npm have this `link` help do this.
-But the ultimate solution is `monorepo` (Tools like lerna and turborebo are monorepo manager, but we won't expand it here).
 
 # Using npm
 
@@ -48,3 +43,15 @@ You can also associate a scope with a registry using npm config:
 > npm config set @myco:registry http://reg.example.com
 
 Once a scope is associated with a registry, any `npm install` for a package with that scope will request packages from that registry instead. Any `npm publish` for a package name that contains the scope will be published to that registry instead.
+
+# How to test a developing module
+
+Can use softlink to this. Both yarn and npm have this `link` help do this.
+But the ultimate solution is `monorepo` (Tools like lerna and turborebo are monorepo manager, but we won't expand it here).
+
+# Npm global install, prompt "user is 'nouser'", causing no permission
+
+Met this problem on Mac  
+https://stackoverflow.com/questions/44633419/no-access-permission-error-with-npm-global-install-on-docker-image
+
+# [Resolving `EACCES` permissions erros when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
